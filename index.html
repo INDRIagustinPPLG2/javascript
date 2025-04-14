@@ -12,16 +12,16 @@
         function hitung(){
             return angka1 ** angka2
         }
-        let hasil=hitung(angka1,angka2);
-        alert(hitung(hasil));
-
-        let angka=prompt("masukan angka: ");
-        if (angka % 2 === 0){
-            document.write(angka + " adalah bilangan genap");
-        }else {
-            document.write(angka + " adalah bilanga ganjil");
-        }
-
+        
+        let angka=prompt("masukan angka:")
+        function cekGanjilGenap(angka){
+            if(angka % 2 ===0){
+                return"genap";
+            }else{
+                return"ganjil";
+            }
+        }alert(cekGanjilGenap(Number(angka)));
+        
                    
     </script>
 </body>
